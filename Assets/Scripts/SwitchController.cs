@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class SwitchController : MonoBehaviour
 {
+    // Public Variables
+    public AudioManager audioManager;
+    public VFXManager vfxManager;
+
     //Private Variables
     private enum SwitchState
     {
@@ -71,6 +75,8 @@ public class SwitchController : MonoBehaviour
         if (other == ball)
         {
             Toggle();
+            audioManager.PlaySwitchSFX(other.transform.position);
+            vfxManager.PlaySwitchVFX(other.transform.position);
         }
     }
 

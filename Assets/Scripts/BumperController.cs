@@ -8,6 +8,8 @@ public class BumperController : MonoBehaviour
     // Public Variables
     public float multiplier;
     public Color color;
+    public AudioManager audioManager;
+    public VFXManager vfxManager;
 
     //Private Variables
     private Collider ball;
@@ -43,6 +45,9 @@ public class BumperController : MonoBehaviour
 
             // Wondering if there's a way to get this using GUI fromt the animator controller?
             animator.SetTrigger("Hit");
+
+            audioManager.PlayBumperSFX(collision.transform.position);
+            vfxManager.PlayBumperVFX(collision.transform.position);
         }
     }
 }
