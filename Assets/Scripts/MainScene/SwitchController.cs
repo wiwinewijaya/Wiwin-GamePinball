@@ -8,6 +8,8 @@ public class SwitchController : MonoBehaviour
     // Public Variables
     public AudioManager audioManager;
     public VFXManager vfxManager;
+    public ScoreManager scoreManager;
+    public float switchScore;
 
     //Private Variables
     private enum SwitchState
@@ -98,6 +100,7 @@ public class SwitchController : MonoBehaviour
 
     private void Toggle()
     {
+        scoreManager.AddScore(switchScore);
         if (state == SwitchState.On)
         {
             SetSwitch(false);

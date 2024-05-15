@@ -123,6 +123,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   multiplier: 2.5
   color: {r: 1, g: 0, b: 0, a: 0}
+  audioManager: {fileID: 0}
+  vfxManager: {fileID: 0}
+  scoreManager: {fileID: 0}
+  bumperScore: 5
 --- !u!95 &6313726371057141212
 Animator:
   serializedVersion: 5

@@ -119,6 +119,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c90fb77cec92a488de5214ef150d59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
+  vfxManager: {fileID: 0}
+  scoreManager: {fileID: 0}
+  switchScore: 5
   offMaterial: {fileID: 2100000, guid: 58d366dca485b644a8bcfd067693ee7c, type: 2}
   onMaterial: {fileID: 2100000, guid: e9058ddb70f8fc74cabf2d8a6f804955, type: 2}
   blinkTimer: 5
